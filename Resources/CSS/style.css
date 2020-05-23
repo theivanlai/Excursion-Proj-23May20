@@ -8,10 +8,21 @@ html {
 
 h1 {
     color: white;
+    text-align: center;
 }
 
 h5 {
 color: aquamarine;
+text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: aquamarine;
 }
 
 .excursion-section {
@@ -19,6 +30,13 @@ color: aquamarine;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.heading-1 {
+    font-weight: normal;
+    font-size: 50px;
+    text-align: center;
+    width: 85%;
 }
 
 .excursion-video {
@@ -29,9 +47,32 @@ color: aquamarine;
 .heading-2 {
     font-size: 42px;
     font-weight: 300;
+    text-align: center;
 }
 
 .subheading {
     font-size: 21px;
     color: gray;
+    text-align: center;
+}
+
+.camping-image {
+    margin-bottom: 50px;
+}
+
+.copyright {
+    text-align: right;
+    color: gray;
+}
+
+@media only screen and (max-width: 1000px) {
+    .camping-image {
+       width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .heading-1, .heading-2 {
+        font-size: 30px;
+    }
 }
